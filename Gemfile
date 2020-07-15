@@ -13,10 +13,12 @@ ruby RUBY_VERSION
 
 # gem "github-pages", group: :jekyll_plugins
 
-require 'json'
-require 'open-uri'
-versions = JSON.parse(open('https://pages.github.com/versions.json').read)
-gem 'github-pages', versions['github-pages']
+# require 'json', "1.8.6"
+# require 'open-uri'
+# versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+# gem 'github-pages', versions['github-pages']
+
+gem 'github-pages', "206"
 
 # If you have any plugins, put them here!
 # group :jekyll_plugins do
